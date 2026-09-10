@@ -9,7 +9,7 @@ public:
         int ans = 0;
         double ave = sum/n;
         if(ave < 0) ave = 0;
-        set<int> s;
+        unordered_set<int> s;
         for(auto it : nums){
             s.insert(it);
         }
