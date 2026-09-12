@@ -1,16 +1,11 @@
 class Solution {
 public:
     string restoreString(string s, vector<int>& indices) {
-        int n = indices.size();
-        string ans = "";
-        map<int,char> mp;
+        int n = s.size();
+        string ans(n,' ');
         for(int i=0;i<n;i++){
-            mp[indices[i]] = s[i];
-        }
-        for(auto it : mp){
-            ans += it.second;
+            ans[indices[i]] = s[i];
         }
         return ans;
-
     }
 };
