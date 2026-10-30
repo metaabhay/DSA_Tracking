@@ -14,7 +14,7 @@ public:
             i++;
         }
         double ans = sum;
-        while(ans > sum/2.0){
+        while(ans > sum/2){
             double a = pq.top();
             pq.pop();
             a = a/2;
